@@ -1,0 +1,44 @@
+baseURL = "https://blog.rustic.digital/"
+languageCode = "en-us"
+theme = "winston"
+themesDir = "themes"
+title = "rustic.digital blog"
+paginate = 3
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsUseClasses = true
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.55.0"
+
+[params]
+  google_analytics_id = ""
+  twitter_handle = ""
+  showAuthorOnHomepage = true
+  showAuthorOnPosts = false
+  showPostsOnHomepage = false
+  addDot = true
+  addFrame = true
+  highlightColor = '#0DB8C9'
+  baseColor = "#FFFFFF"
+  baseOffsetColor = "#000000"
+  headingColor = "#000000"
+  textColor = "#000000"
+  dotColor = "#0DB8C9"
+
+# markdown config settings https://gohugo.io/getting-started/configuration-markup/#goldmark
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = true
+      xhtml = false
+
+[menu]
+  [[menu.main]]
+    identifier = 'home'
+    name = 'Home'
+    url = '/'
+    weight = 1
